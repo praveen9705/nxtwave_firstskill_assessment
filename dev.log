@@ -1,0 +1,596 @@
+[33m[nodemon] 3.1.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): src/**/*[39m
+[33m[nodemon] watching extensions: ts,tsx,js,jsx[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1603ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.1s (887 modules)
+Error fetching movies: Error: Failed to fetch top rated movies
+    at fetchTopRatedMovies (src/lib/tmdb.ts:30:10)
+    at async Home (src/app/page.tsx:8:62)
+  28 |   
+  29 |   if (!res.ok) {
+> 30 |     throw new Error('Failed to fetch top rated movies');
+     |          ^
+  31 |   }
+  32 |   
+  33 |   return res.json();
+Error fetching movies: Error: Failed to fetch top rated movies
+    at fetchTopRatedMovies (src/lib/tmdb.ts:30:10)
+    at async Home (src/app/page.tsx:8:62)
+  28 |   
+  29 |   if (!res.ok) {
+> 30 |     throw new Error('Failed to fetch top rated movies');
+     |          ^
+  31 |   }
+  32 |   
+  33 |   return res.json();
+ GET / 200 in 602ms
+Error fetching movies: Error: Failed to fetch popular movies
+    at fetchPopularMovies (src/lib/tmdb.ts:10:10)
+    at async Home (src/app/page.tsx:8:62)
+   8 |   
+   9 |   if (!res.ok) {
+> 10 |     throw new Error('Failed to fetch popular movies');
+     |          ^
+  11 |   }
+  12 |   
+  13 |   return res.json();
+ GET / 200 in 278ms
+ ⚠ Cross origin request detected from preview-chat-6cf3fb99-2aa6-4dc7-b91f-9166c5081c7b.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1643ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.3s (887 modules)
+Error fetching movies: Error: TMDB API key is missing
+    at fetchPopularMovies (src/lib/tmdb.ts:27:10)
+    at Home (src/app/page.tsx:9:24)
+  25 | export async function fetchPopularMovies(): Promise<MovieListResponse> {
+  26 |   if (!API_KEY) {
+> 27 |     throw new Error('TMDB API key is missing');
+     |          ^
+  28 |   }
+  29 |   
+  30 |   const url = `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
+Error fetching movies: Error: TMDB API key is missing
+    at fetchPopularMovies (src/lib/tmdb.ts:27:10)
+    at Home (src/app/page.tsx:9:24)
+  25 | export async function fetchPopularMovies(): Promise<MovieListResponse> {
+  26 |   if (!API_KEY) {
+> 27 |     throw new Error('TMDB API key is missing');
+     |          ^
+  28 |   }
+  29 |   
+  30 |   const url = `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
+ GET / 200 in 1498ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1661ms
+ ⚠ Cross origin request detected from preview-chat-6cf3fb99-2aa6-4dc7-b91f-9166c5081c7b.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1641ms
+   Reload env: .env.local
+ ○ Compiling / ...
+ ✓ Compiled / in 5s (887 modules)
+ GET / 200 in 5462ms
+ GET / 200 in 2092ms
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1598ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.2s (887 modules)
+ GET / 200 in 6715ms
+ GET / 200 in 412ms
+ GET / 200 in 398ms
+ GET / 200 in 388ms
+ GET / 200 in 383ms
+ GET / 200 in 366ms
+ GET / 200 in 365ms
+ GET / 200 in 359ms
+ GET / 200 in 365ms
+ GET / 200 in 361ms
+ GET / 200 in 363ms
+ GET / 200 in 370ms
+ GET / 200 in 364ms
+ GET / 200 in 360ms
+ GET / 200 in 380ms
+ GET / 200 in 366ms
+ GET / 200 in 368ms
+ GET / 200 in 936ms
+ ○ Compiling /movie/[id] ...
+ ✓ Compiled /movie/[id] in 702ms (865 modules)
+Error: Route "/movie/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at MoviePage (src/app/movie/[id]/page.tsx:17:46)
+  15 | export default async function MoviePage({ params }: MoviePageProps) {
+  16 |   try {
+> 17 |     const movie = await fetchMovieById(params.id);
+     |                                              ^
+  18 |
+  19 |     return (
+  20 |       <div className="min-h-screen bg-black">
+ GET /movie/1231813 200 in 2821ms
+Error: Route "/movie/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at MoviePage (src/app/movie/[id]/page.tsx:17:46)
+  15 | export default async function MoviePage({ params }: MoviePageProps) {
+  16 |   try {
+> 17 |     const movie = await fetchMovieById(params.id);
+     |                                              ^
+  18 |
+  19 |     return (
+  20 |       <div className="min-h-screen bg-black">
+ GET /movie/1231813 200 in 282ms
+ ✓ Compiled / in 130ms (487 modules)
+ GET / 200 in 1197ms
+Error: Route "/movie/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at MoviePage (src/app/movie/[id]/page.tsx:17:46)
+  15 | export default async function MoviePage({ params }: MoviePageProps) {
+  16 |   try {
+> 17 |     const movie = await fetchMovieById(params.id);
+     |                                              ^
+  18 |
+  19 |     return (
+  20 |       <div className="min-h-screen bg-black">
+ GET /movie/1248226 200 in 277ms
+ GET / 200 in 1484ms
+Error: Route "/movie/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at MoviePage (src/app/movie/[id]/page.tsx:17:46)
+  15 | export default async function MoviePage({ params }: MoviePageProps) {
+  16 |   try {
+> 17 |     const movie = await fetchMovieById(params.id);
+     |                                              ^
+  18 |
+  19 |     return (
+  20 |       <div className="min-h-screen bg-black">
+ GET /movie/238 200 in 283ms
+ ✓ Compiled /_not-found in 413ms (761 modules)
+ GET /my-list 404 in 522ms
+ GET /my-list 404 in 86ms
+ ✓ Compiled / in 112ms (483 modules)
+ GET / 200 in 1742ms
+ GET /my-list 404 in 13ms
+ GET /my-list 404 in 40ms
+ GET / 200 in 1398ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1747ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1759ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1852ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5s (887 modules)
+ GET / 200 in 3030ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1633ms
+ ○ Compiling /my-list ...
+ ✓ Compiled /my-list in 4.8s (836 modules)
+ GET /my-list 200 in 5232ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1665ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.1s (887 modules)
+ GET / 200 in 6834ms
+ GET / 200 in 940ms
+ ✓ Compiled /my-list in 437ms (860 modules)
+ GET /my-list 200 in 644ms
+ GET / 200 in 1430ms
+ ✓ Compiled /movie/[id] in 289ms (866 modules)
+Error: Route "/movie/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at MoviePage (src/app/movie/[id]/page.tsx:17:46)
+  15 | export default async function MoviePage({ params }: MoviePageProps) {
+  16 |   try {
+> 17 |     const movie = await fetchMovieById(params.id);
+     |                                              ^
+  18 |
+  19 |     return (
+  20 |       <div className="min-h-screen bg-black">
+ GET /movie/1248226 200 in 2121ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1751ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1611ms
+ ○ Compiling / ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1623ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5s (887 modules)
+ GET / 200 in 5787ms
+ GET / 200 in 1149ms
+ ○ Compiling /movie/[id] ...
+ ✓ Compiled /movie/[id] in 509ms (864 modules)
+Error: Route "/movie/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at MoviePage (src/app/movie/[id]/page.tsx:18:46)
+  16 | export default async function MoviePage({ params }: MoviePageProps) {
+  17 |   try {
+> 18 |     const movie = await fetchMovieById(params.id);
+     |                                              ^
+  19 |
+  20 |     return (
+  21 |       <div className="min-h-screen bg-black">
+ GET /movie/1062722 200 in 2318ms
+ GET / 200 in 541ms
+ ✓ Compiled /movies in 318ms (869 modules)
+ GET /movies 200 in 1624ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1596ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1652ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.4s (887 modules)
+ GET / 200 in 2619ms
+ ⨯ upstream image response failed for https://image.tmdb.org/t/p/original 404
+ GET / 200 in 402ms
+ ✓ Compiled /movies in 381ms (860 modules)
+ GET /movies 200 in 1464ms
+ GET /movies 200 in 273ms
+ ✓ Compiled /tv in 244ms (865 modules)
+ GET /tv 200 in 289ms
+ ✓ Compiled /my-list in 256ms (872 modules)
+ GET /my-list 200 in 301ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1695ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.7s (887 modules)
+ GET / 200 in 7157ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1619ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.2s (887 modules)
+ GET / 200 in 2873ms
+ GET / 200 in 1402ms
+ ○ Compiling /search ...
+ ✓ Compiled /search in 542ms (864 modules)
+ GET /search 200 in 634ms
+ GET /search 200 in 14ms
+ GET /search 200 in 12ms
+ ⚠ Cross origin request detected from preview-chat-6cf3fb99-2aa6-4dc7-b91f-9166c5081c7b.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 1139ms
+ ✓ Compiled /my-list in 272ms (871 modules)
+ GET /my-list 200 in 315ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1635ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1635ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1676ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.9s (887 modules)
+ GET / 200 in 2890ms
+ GET / 200 in 415ms
+ ✓ Compiled /my-list in 420ms (862 modules)
+ GET /my-list 200 in 602ms
+ ✓ Compiled /search in 280ms (871 modules)
+ GET /search 200 in 325ms
+ ✓ Compiled /tv in 264ms (876 modules)
+ GET /tv 200 in 318ms
+ GET /search 200 in 16ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1689ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1626ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.4s (887 modules)
+ GET / 200 in 3333ms
+ GET / 200 in 422ms
+ ✓ Compiled /search in 480ms (866 modules)
+ GET /search 200 in 668ms
+ ⚠ Cross origin request detected from preview-chat-6cf3fb99-2aa6-4dc7-b91f-9166c5081c7b.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /my-list in 267ms (873 modules)
+ GET /my-list 200 in 307ms
+ GET / 200 in 1501ms
+ GET /search 200 in 22ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1618ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1637ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1630ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5s (887 modules)
+ GET / 200 in 6143ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1630ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1623ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.2s (887 modules)
+ GET / 200 in 6947ms
+ GET / 200 in 414ms
+ ✓ Compiled /search in 490ms (866 modules)
+ GET /search 200 in 566ms
+ ⚠ Cross origin request detected from preview-chat-6cf3fb99-2aa6-4dc7-b91f-9166c5081c7b.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 542ms
+ ✓ Compiled /movies in 226ms (871 modules)
+ GET /movies 200 in 1518ms
+ GET / 200 in 1163ms
+ GET / 200 in 695ms
+ GET / 200 in 1378ms
+ GET / 200 in 361ms
+ GET / 200 in 846ms
+ GET / 200 in 1071ms
+ GET / 200 in 616ms
+ GET / 200 in 849ms
+ GET / 200 in 369ms
+ GET / 200 in 874ms
+ GET / 200 in 839ms
+ GET / 200 in 354ms
+ GET / 200 in 879ms
+ GET / 200 in 838ms
+ GET / 200 in 870ms
+ GET / 200 in 1362ms
+ GET / 200 in 381ms
+ GET / 200 in 1109ms
+ GET / 200 in 364ms
+ GET / 200 in 374ms
+ GET / 200 in 1621ms
+ GET / 200 in 356ms
+ GET / 200 in 1126ms
+ GET / 200 in 852ms
+ GET / 200 in 1129ms
+ GET / 200 in 382ms
+ GET / 200 in 616ms
+ GET / 200 in 1353ms
+ GET / 200 in 1164ms
+ ⨯ upstream image response failed for https://image.tmdb.org/t/p/original 404
+ GET / 200 in 1355ms
+ GET / 200 in 859ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1806ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `next dev -p 3000`[39m
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.115:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1625ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.1s (887 modules)
+ GET / 200 in 5466ms
+ GET / 200 in 2053ms
+ GET / 200 in 405ms
+ GET / 200 in 1157ms
+ GET / 200 in 903ms
+ GET / 200 in 422ms
+ GET / 200 in 399ms
+ GET / 200 in 920ms
+ GET / 200 in 1185ms
